@@ -14,19 +14,19 @@
 
 int	ft_put_c(char ap)
 {
-	ft_putchar_fd(ap, 1);
+	ft_putchar_fd1(ap, 1);
 	return (1);
 }
 
 int	ft_put_d(signed int ap)
 {
-	ft_putnbr_fd(ap, 1);
+	ft_putnbr_fd1(ap, 1);
 	return (ft_nbrlen(ap));
 }
 
 int	ft_put_i(int ap)
 {
-	ft_putnbr_fd(ap, 1);
+	ft_putnbr_fd1(ap, 1);
 	return (ft_nbrlen(ap));
 }
 
@@ -37,6 +37,6 @@ int	ft_put_s(char *ap)
 		write(1, "(null)", 6);
 		return (6);
 	}
-	ft_putstr_fd(ap, 1);
-	return (ft_strlen(ap));
+	ft_putstr_fd1(ap, 1);
+	return (ft_strlen2(ap));
 }

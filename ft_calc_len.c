@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-size_t	ft_strlen(char *s)
+size_t	ft_strlen2(const char *s)
 {
 	size_t	len;
 

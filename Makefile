@@ -27,11 +27,11 @@ ${NAME}: ${OBJS}
 all:		${NAME}
 
 clean:
-	@$(MAKE) 
+# @$(MAKE) 
 	${RM} $(OBJS)
 
 fclean: clean
-	@$(MAKE)
+# @$(MAKE)
 	${RM} $(NAME) $(OBJS)
 
 re:			fclean all

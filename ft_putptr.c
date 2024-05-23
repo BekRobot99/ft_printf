@@ -17,6 +17,6 @@ void	ft_putptr(void *ptr)
 	unsigned long long	number;
 
 	number = (unsigned long long)ptr;
-	ft_putstr_fd("0x", 1);
+	ft_putstr_fd1("0x", 1);
 	ft_putull_base(number, "0123456789abcdef");
 }

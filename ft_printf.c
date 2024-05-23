@@ -48,12 +48,12 @@ int	ft_printf(const char *format, ...)
 	{
 		if (*format != '%')
 		{
-			ft_putchar_fd(*format, 1);
+			ft_putchar_fd1(*format, 1);
 			count++;
 		}
 		if (*format++ == '%')
 		{
-			if (ft_strchr(convs, *format) && *format)
+			if (ft_strchr1(convs, *format) && *format)
 			{
 				count += ft_put_in_format(*format, ap);
 			}
